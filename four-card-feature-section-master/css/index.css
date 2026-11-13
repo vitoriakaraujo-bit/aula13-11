@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    width: 85%;
+    max-width: 1000px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 10px 20px #ddd;
+}
+
+h2 {
+    color: #999;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+h1 {
+    color: #303044;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.descricao {
+    color: #aaa;
+    font-size: 11px;
+    margin-bottom: 35px;
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cartao {
+    background-color: white;
+    height: 137px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 8px 15px #e0e5ed;
+    border-top: 3px solid;
+}
+
+.supervisor {
+    border-color: #45c5c5;
+}
+
+.equipe {
+    border-color: #e84b4b;
+}
+
+.karma {
+    border-color: #f3b52c;
+}
+
+.calculadora {
+    border-color: #4095d1;
+}
+
+.cartao h3 {
+    color: #303044;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.cartao p {
+    color: #aaa;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.cartao img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 95%;
+        padding: 25px;
+        margin: 20px 0;
+    }
+
+    .cartoes {
+        grid-template-columns: 1fr;
+    }
+}
